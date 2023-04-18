@@ -29,8 +29,7 @@ Img,
 Img2,
 Img3,
 StyleModalLinkContainer,
-Close,
-ButtonTwo
+Close
 } from './PortfolioElements';
 
 const Portfolio = () => {
