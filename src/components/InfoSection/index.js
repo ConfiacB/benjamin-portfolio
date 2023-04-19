@@ -54,7 +54,7 @@ const InfoSection = ({
                   <ul>
                     <li>React, React Native, Flutter, Redux, PostgreSQL, MongoDB, NodeJS, ...</li>
                     <li>JavaScript, TypeScript, Go, Dart, SQL, Java, Python, C#, ...</li>
-                    <li>Visual Studio, Trello, Slack, Spyder, ...</li>
+                    <li>Visual Studio Code, Trello, Slack, Figma, ...</li>
                   </ul>
                 </Subtitle>
                 <BtnWrap>
