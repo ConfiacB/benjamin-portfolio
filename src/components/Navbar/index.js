@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <SocialWrapper>
             <SocialButton
-              href="https://www.linkedin.com/in/benjamin-confiac-685902202/" 
+              href="https://www.linkedin.com/in/benjamin-confiac/" 
               target="_blank" 
               aria-label="LinkedIn"
               onMouseOver={() => setOver(true)}
