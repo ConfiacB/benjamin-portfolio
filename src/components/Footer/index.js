@@ -14,24 +14,26 @@ import {
   ArrowUp
 } from './FooterElements';
 
-const Footer = () => {
+const Footer = ({ social }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const { linkedin, email } = social;
 
   return (
     <FooterContainer id='footer'>
       <FooterWrap>
         <SocialIcons>
           <SocialIconLink 
-            href="https://www.linkedin.com/in/benjamin-confiac/" 
+            href={linkedin}
             target="_blank" 
             aria-label="LinkedIn"
           ><FaLinkedin />
           </SocialIconLink>
           <SocialIconLink 
-            href="mailto:benjamin.confiac@gmail.com"
+            href={`mailto:${email}`}
             aria-label="Email"
           ><MdMail />
           </SocialIconLink>

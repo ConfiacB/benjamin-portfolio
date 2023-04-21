@@ -11,7 +11,7 @@ import {
 } from './HeroElements';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Sphere from "../AnimatedSphere";
+import Sphere from "./AnimatedSphere";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);

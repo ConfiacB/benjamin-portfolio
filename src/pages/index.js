@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne } from '../components/InfoSection/Data';
+import { homeObjOne, social } from '../components/Data';
 import Navbar from '../components/Navbar';
 import Portfolio from '../components/Portfolio';
 import Sidebar from '../components/Sidebar';
@@ -17,11 +17,11 @@ const Home = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} social={social}/>
       <HeroSection />
       <InfoSection { ...homeObjOne } />
       <Portfolio />
-      <Footer />
+      <Footer social={social}/>
     </>
   )
 }

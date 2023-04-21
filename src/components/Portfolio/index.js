@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CloseIcon from '../../images/close.png';
 import JsNote from '../../images/project/jsnote-webapp.png';
 import Movies from '../../images/project/movies-webapp.png';
 import Portfolio_App from '../../images/project/portfolio.png';
@@ -13,23 +12,13 @@ import Connect4_Icon from '../../images/connect_four.png'
 import Connect4 from '../../images/project/connect_four_game.png';
 import Korean_Icon from '../../images/Korean-Icon.png';
 import Korean from '../../images/project/korean-training.png';
+import PortfolioProject from './PortfolioProject';
 
 import {
 PortfolioContainer,
 PortfolioH1,
 PortfolioWrapper,
-PortfolioCard,
-PortfolioIcon,
-PortfolioH2,
 PortfolioP2,
-StyleModal,
-StyleModalTitle,
-StyleModalP,
-Img,
-Img2,
-Img3,
-StyleModalLinkContainer,
-Close
 } from './PortfolioElements';
 
 const Portfolio = () => {
@@ -86,356 +75,139 @@ const Portfolio = () => {
       <PortfolioWrapper>
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="jsnote-app" onClick={toggleJsNote}>
-          <PortfolioIcon src={JsNote} />
-          <PortfolioH2>JsNote App</PortfolioH2>
-        </PortfolioCard>
-
-        <StyleModal
-          isOpen={jsNoteIsOpen}
-          onBackgroundClick={toggleJsNote}
-          onEscapeKeydown={toggleJsNote}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleJsNote} />
-          <Img src={JsNote} alt="jsnote-app" />
-          <StyleModalTitle>JsNote App</StyleModalTitle>
-          <StyleModalP>
-            This is an interactive coding environment. 
-            You can write Javascript, see it executed, and write comprehensive documentation using markdown. 
-            All of your changes get saved to the file you opened Jsnote with.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React, Redux<br />
-            <b>Languages : </b> TypeScript
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"jsnote-app"}
+          toggle={toggleJsNote}
+          imgIcon={JsNote}
+          imgProject={JsNote}
+          title={"JsNote App"}
+          open={jsNoteIsOpen}
+          alt={"jsnote-app"}
+          text={"This is an interactive coding environment. You can write Javascript, see it executed, and write comprehensive documentation using markdown. All of your changes get saved to the file you opened Jsnote with."}
+          tools={"React, Redux"}
+          languages={"TypeScript"}
+          imageNumber={1}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="movies-webapp" onClick={toggleMovies}>
-          <PortfolioIcon src={Movies} />
-          <PortfolioH2>Movies Database App</PortfolioH2>
-        </PortfolioCard>
-        <StyleModal
-          isOpen={moviesIsOpen}
-          onBackgroundClick={toggleMovies}
-          onEscapeKeydown={toggleMovies}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleMovies} />
-          <Img src={Movies} alt="movies-app" />
-          <StyleModalTitle>Movies Database App</StyleModalTitle>
-          <StyleModalP>
-            This is a web application where you can manage movies using RESTful API.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React, GraphQL, PostgreSQL, Postman, themoviedb.org API<br />
-            <b>Languages : </b>JavaScript, Go, SQL
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"movies-webapp"}
+          toggle={toggleMovies}
+          imgIcon={Movies}
+          imgProject={Movies}
+          title={"Movies Database App"}
+          open={moviesIsOpen}
+          alt={"movies-app"}
+          text={"This is a web application where you can manage movies using RESTful API."}
+          tools={"React, GraphQL, PostgreSQL, Postman, themoviedb.org API"}
+          languages={"JavaScript, Go, SQL"}
+          imageNumber={1}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="portfolio-app" onClick={togglePortfolio}>
-          <PortfolioIcon src={Portfolio_App} />
-          <PortfolioH2>Portfolio</PortfolioH2>
-        </PortfolioCard>
-        <StyleModal
-          isOpen={portfolioIsOpen}
-          onBackgroundClick={togglePortfolio}
-          onEscapeKeydown={togglePortfolio}
-        >
-          <Close src={CloseIcon} alt="close" onClick={togglePortfolio} />
-          <Img src={Portfolio_App} alt="portfolio-app" />
-          <StyleModalTitle>Portfolio</StyleModalTitle>
-          <StyleModalP>
-            The purpose of this application is to display my IT projects, I use it as my personal portfolio website.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React<br />
-            <b>Languages : </b>JavaScript
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"portfolio-app"}
+          toggle={togglePortfolio}
+          imgIcon={Portfolio_App}
+          imgProject={Portfolio_App}
+          title={"Portfolio"}
+          open={portfolioIsOpen}
+          alt={"portfolio-app"}
+          text={"The purpose of this application is to display my IT projects, I use it as my personal portfolio website."}
+          tools={"React"}
+          languages={"JavaScript"}
+          imageNumber={1}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="shop-app" onClick={toggleShop}>
-          <PortfolioIcon src={Shop} />
-          <PortfolioH2>Shop App</PortfolioH2>
-        </PortfolioCard>
-        <StyleModal
-          isOpen={shopIsOpen}
-          onBackgroundClick={toggleShop}
-          onEscapeKeydown={toggleShop}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleShop} />
-          <Img3 src={Shop} alt="shop-app" />
-          <StyleModalTitle>Shop App</StyleModalTitle>
-          <StyleModalP>
-            A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React, Redux, Express, MongoDB, NodeJS, PayPal API<br />
-            <b>Languages : </b>JavaScript, SQL
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"shop-app"}
+          toggle={toggleShop}
+          imgIcon={Shop}
+          imgProject={Shop}
+          title={"Shop App"}
+          open={shopIsOpen}
+          alt={"shop-app"}
+          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack."}
+          tools={"React, Redux, Express, MongoDB, NodeJS, PayPal API"}
+          languages={"JavaScript, SQL"}
+          imageNumber={3}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="memory-game-app" onClick={toggleMemory}>
-          <PortfolioIcon src={Memory} />
-          <PortfolioH2>Memory Game</PortfolioH2>
-        </PortfolioCard>
-        <StyleModal
-          isOpen={memoryIsOpen}
-          onBackgroundClick={toggleMemory}
-          onEscapeKeydown={toggleMemory}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleMemory} />
-          <Img src={Memory} alt="memory-game-app" />
-          <StyleModalTitle>Memory Game</StyleModalTitle>
-          <StyleModalP>
-            This is a simple SPA (Single Page Application) Memory Game.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React<br />
-            <b>Languages : </b>JavaScript
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"memory-game-app"}
+          toggle={toggleMemory}
+          imgIcon={Memory}
+          imgProject={Memory}
+          title={"Memory Game"}
+          open={memoryIsOpen}
+          alt={"memory-game-app"}
+          text={"This is a simple SPA (Single Page Application) Memory Game."}
+          tools={"React"}
+          languages={"JavaScript"}
+          imageNumber={1}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="news-app" onClick={toggleNews}>
-          <PortfolioIcon src={News_Icon} />
-          <PortfolioH2>News App</PortfolioH2>
-        </PortfolioCard>
-
-        <StyleModal
-          isOpen={newsIsOpen}
-          onBackgroundClick={toggleNews}
-          onEscapeKeydown={toggleNews}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleNews} />
-          <Img2 src={News} alt="news-app" />
-          <StyleModalTitle>News App</StyleModalTitle>
-          <StyleModalP>
-            A news feed application with a Home screen and a Detail screen.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React Native, Redux, newsapi.org API, Postman<br />
-            <b>Languages : </b>TypeScript
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"news-app"}
+          toggle={toggleNews}
+          imgIcon={News_Icon}
+          imgProject={News}
+          title={"News App"}
+          open={newsIsOpen}
+          alt={"news-app"}
+          text={"A news feed application with a Home screen and a Detail screen."}
+          tools={"React Native, Redux, newsapi.org API, Postman"}
+          languages={"TypeScript"}
+          imageNumber={2}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="BMI-app" onClick={toggleBMI}>
-          <PortfolioIcon src={BMI_Icon} />
-          <PortfolioH2>BMI Calculator</PortfolioH2>
-        </PortfolioCard>
-
-        <StyleModal
-          isOpen={bmiIsOpen}
-          onBackgroundClick={toggleBMI}
-          onEscapeKeydown={toggleBMI}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleBMI} />
-          <Img2 src={BMI} alt="BMI-app" />
-          <StyleModalTitle>BMI Calculator</StyleModalTitle>
-          <StyleModalP>
-            A BMI (Body Mass Index) Calculator app with a Home screen and a Result screen.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>Flutter, Android Studio<br />
-            <b>Languages : </b>Dart
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"BMI-app"}
+          toggle={toggleBMI}
+          imgIcon={BMI_Icon}
+          imgProject={BMI}
+          title={"BMI Calculator"}
+          open={bmiIsOpen}
+          alt={"BMI-app"}
+          text={"A BMI (Body Mass Index) Calculator app with a Home screen and a Result screen."}
+          tools={"Flutter, Android Studio"}
+          languages={"Dart"}
+          imageNumber={2}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="connect4-app" onClick={toggleConnect4}>
-          <PortfolioIcon src={Connect4_Icon} />
-          <PortfolioH2>Connect Four with AI</PortfolioH2>
-        </PortfolioCard>
-
-        <StyleModal
-          isOpen={connect4IsOpen}
-          onBackgroundClick={toggleConnect4}
-          onEscapeKeydown={toggleConnect4}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleConnect4} />
-          <Img3 src={Connect4} alt="connect4-app" />
-          <StyleModalTitle>Connect Four with AI</StyleModalTitle>
-          <StyleModalP>
-            A connect four game where you play against an AI. You have to form a horizontal, vertical, or diagonal line of 4 tokens.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>Spyder IDE<br />
-            <b>Languages : </b>Python
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"connect4-app"}
+          toggle={toggleConnect4}
+          imgIcon={Connect4_Icon}
+          imgProject={Connect4}
+          title={"Connect Four with AI"}
+          open={connect4IsOpen}
+          alt={"connect4-app"}
+          text={"A Connect Four game where you play against an AI. You have to form a horizontal, vertical, or diagonal line of 4 tokens."}
+          tools={"Spyder IDE"}
+          languages={"Python"}
+          imageNumber={3}
+        />
 
         {/* ---------------- project ---------------------------------- */}
-        <PortfolioCard id="korean-app" onClick={toggleKorean}>
-          <PortfolioIcon src={Korean_Icon} />
-          <PortfolioH2>Korean Training</PortfolioH2>
-        </PortfolioCard>
-
-        <StyleModal
-          isOpen={koreanIsOpen}
-          onBackgroundClick={toggleKorean}
-          onEscapeKeydown={toggleKorean}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleKorean} />
-          <Img src={Korean} alt="korean-app" />
-          <StyleModalTitle>Korean Training</StyleModalTitle>
-          <StyleModalP>
-            Auto-generate sentence flashcards to practice Korean.
-            Each card has 2 buttons, "Show Answer" and "Next".<br /> 
-            It gives sentences or words (depending on the options chosen)
-            The goal is to either translate or to conjugate these words.
-          </StyleModalP>
-          <StyleModalP>
-            <b>Tools : </b>React<br />
-            <b>Languages : </b>JavaScript
-          </StyleModalP>
-          <StyleModalLinkContainer>
-            {/*
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href=""
-            >
-              View Website
-            </ButtonTwo>
-            */}
-          </StyleModalLinkContainer>
-        </StyleModal>
+        <PortfolioProject
+          id={"korean-app"}
+          toggle={toggleKorean}
+          imgIcon={Korean_Icon}
+          imgProject={Korean}
+          title={"Korean Training"}
+          open={koreanIsOpen}
+          alt={"korean-app"}
+          text={"Auto-generate sentence flashcards to practice Korean. Each card has 2 buttons, 'Show Answer' and 'Next'.\n It gives sentences or words (depending on the options chosen), the goal is to either translate or to conjugate these words."}
+          tools={"React"}
+          languages={"JavaScript"}
+          imageNumber={1}
+        />
 
       </PortfolioWrapper>
     </PortfolioContainer>

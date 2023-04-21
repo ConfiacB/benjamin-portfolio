@@ -16,7 +16,7 @@ import {
   SocialWrapper
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, social }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [over, setOver] = useState(false);
   const [overMail, setOverMail] = useState(false);
@@ -36,6 +36,8 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const { linkedin, email } = social;
 
   return (
     <>
@@ -68,7 +70,7 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <SocialWrapper>
             <SocialButton
-              href="https://www.linkedin.com/in/benjamin-confiac/" 
+              href={linkedin}
               target="_blank" 
               aria-label="LinkedIn"
               onMouseOver={() => setOver(true)}
@@ -78,7 +80,7 @@ const Navbar = ({ toggle }) => {
               />
             </SocialButton>
             <SocialButton
-              href="mailto:benjamin.confiac@gmail.com"
+              href={`mailto:${email}`}
               aria-label="Email"
               onMouseOver={() => setOverMail(true)}
               onMouseLeave={() => setOverMail(false)}
