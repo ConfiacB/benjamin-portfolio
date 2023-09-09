@@ -10,6 +10,7 @@ import {
     Img,
     Img2,
     Img3,
+    Img4,
     StyleModalLinkContainer,
     Close
     } from './PortfolioElements';
@@ -26,6 +27,8 @@ const PortfolioProject = ({ id, toggle, imgIcon, imgProject, title, open, alt, t
         img = <Img2 src={imgProject} alt={alt} />;
     } else if (imageNumber===3) {
         img = <Img3 src={imgProject} alt={alt} />;
+    } else if (imageNumber===4) {
+        img = <Img4 src={imgProject} alt={alt} />;
     } else {
         img = <Img src={imgProject} alt={alt} />;
     }

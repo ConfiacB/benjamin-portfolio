@@ -101,13 +101,13 @@ export const StyleModal = Modal.styled`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  padding: 30px 30px 80px 30px;
+  padding: 10px 0px 30px 0px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   margin: auto 30px;
-  margin-top: 95px;
-  width: 82%;
-  height: 82%;
+  margin-top: 25px;
+  width: 85%;
+  height: 95%;
   overflow-y: scroll;
 `;
 
@@ -122,10 +122,10 @@ export const StyleModalTitle = styled.h1`
 `;
 
 export const StyleModalP = styled.p`
-  font-size: 1rem;
+  font-size: 18px;
   //text-align: center;
-  width: 40%;
-  margin-bottom: 20px;
+  width: 50%;
+  margin-bottom: 10px;
 `;
 
 export const StyleModalButton = styled.button`
@@ -194,6 +194,12 @@ export const Img2 = styled.img`
 
 export const Img3 = styled.img`
   width: 50%;
+  border-radius: 10px;
+`;
+
+export const Img4 = styled.img`
+  width: auto; 
+  max-height: 100%;
   border-radius: 10px;
 `;
 
