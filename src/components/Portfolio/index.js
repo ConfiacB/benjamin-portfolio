@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import JsNote from '../../images/project/jsnote-webapp.png';
 import Movies from '../../images/project/movies-webapp.png';
 import Portfolio_App from '../../images/project/portfolio.png';
-import Shop_Icon from '../../images/shop.png';
 import Shop from '../../images/project/react-shop.png';
 import Memory from '../../images/project/react-memory-game.png';
 import News from '../../images/project/news-app-demo.gif';
@@ -124,7 +123,7 @@ const Portfolio = () => {
         <PortfolioProject
           id={"shop-app"}
           toggle={toggleShop}
-          imgIcon={Shop_Icon}
+          imgIcon={Shop}
           imgProject={Shop}
           title={"Shop App"}
           open={shopIsOpen}
@@ -132,7 +131,7 @@ const Portfolio = () => {
           text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack."}
           tools={"React, Redux, Express, MongoDB, NodeJS, PayPal API"}
           languages={"JavaScript, SQL"}
-          imageNumber={1}
+          imageNumber={3}
         />
 
         {/* ---------------- project ---------------------------------- */}
