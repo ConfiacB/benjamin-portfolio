@@ -109,9 +109,9 @@ export const StyleModal = Modal.styled`
   width: 85%;
   height: 95%;
   overflow-y: scroll;
-  &::-webkit-scrollbar-track {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  &::-webkit-scrollbar {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 `;
 
