@@ -128,9 +128,9 @@ const Portfolio = () => {
           title={"Shop App"}
           open={shopIsOpen}
           alt={"shop-app"}
-          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack."}
-          tools={"React, Redux, Express, MongoDB, NodeJS, PayPal API"}
-          languages={"JavaScript, SQL"}
+          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack and PayPal."}
+          tools={"React, Redux, Express, MongoDB, NodeJS, Postman, PayPal API"}
+          languages={"JavaScript"}
           imageNumber={3}
         />
 

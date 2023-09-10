@@ -101,7 +101,7 @@ export const StyleModal = Modal.styled`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  padding: 10px 0px 30px 0px;
+  padding: 20px 0px 30px 0px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   margin: auto 30px;
@@ -109,6 +109,10 @@ export const StyleModal = Modal.styled`
   width: 85%;
   height: 95%;
   overflow-y: scroll;
+  &::-webkit-scrollbar-track {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const StyleModalTitle = styled.h1`
