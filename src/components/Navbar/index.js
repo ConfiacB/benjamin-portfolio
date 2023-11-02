@@ -65,7 +65,7 @@ const Navbar = ({ toggle, social }) => {
                 spy={true} 
                 exact='true' 
                 offset={-80}
-              >Portfolio</NavLinks>
+              >Projects</NavLinks>
             </NavItem>
           </NavMenu>
           <SocialWrapper>

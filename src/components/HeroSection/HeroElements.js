@@ -6,7 +6,7 @@ import {
 import { Link } from 'react-scroll';
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;

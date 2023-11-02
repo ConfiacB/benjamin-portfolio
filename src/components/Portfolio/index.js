@@ -70,7 +70,7 @@ const Portfolio = () => {
 
   return (
     <PortfolioContainer id="portfolio">
-      <PortfolioH1>My Portfolio</PortfolioH1>
+      <PortfolioH1>My Projects</PortfolioH1>
       <PortfolioP2>Please check back here for updated projects.</PortfolioP2>
       <PortfolioWrapper>
 
