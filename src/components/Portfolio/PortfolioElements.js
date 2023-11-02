@@ -50,20 +50,20 @@ export const PortfolioWrapper = styled.div`
 `;
 
 export const PortfolioCard = styled.div`
-  background: lightgrey;
+  background: #e5e7e9;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
+  height: 350px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background: #fff;
-    transform: scale(1.02);
+    background: #f8f9f9;
+    transform: scale(1.04);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     opacity: 1;

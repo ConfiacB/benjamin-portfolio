@@ -76,17 +76,26 @@ const Portfolio = () => {
 
         {/* ---------------- project ---------------------------------- */}
         <PortfolioProject
-          id={"jsnote-app"}
-          toggle={toggleJsNote}
-          imgIcon={JsNote}
-          imgProject={JsNote}
-          title={"JsNote App"}
-          open={jsNoteIsOpen}
-          alt={"jsnote-app"}
-          text={"This is an interactive coding environment. You can write Javascript, see it executed, and write comprehensive documentation using markdown. All of your changes get saved to the file you opened Jsnote with."}
-          tools={"React, Redux"}
-          languages={"TypeScript"}
-          imageNumber={1}
+          id={"shop-app"}
+          toggle={toggleShop}
+          imgIcon={Shop}
+          imgProject={Shop}
+          title={"Shop App"}
+          open={shopIsOpen}
+          alt={"shop-app"}
+          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack and PayPal."}
+          tools={"React, Redux, Express, MongoDB, NodeJS, Postman, PayPal API"}
+          languages={"JavaScript"}
+          imageNumber={3}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary' },
+            { key: 1, label: 'Javascript', color: 'error'},
+            { key: 2, label: 'MongoDB', color: 'secondary' },
+            { key: 3, label: 'NodeJS', color: 'secondary'},
+            { key: 4, label: 'Express', color: 'secondary'},
+            { key: 5, label: 'PayPal', color: 'secondary'},
+            { key: 6, label: 'Redux', color: 'secondary'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -102,6 +111,13 @@ const Portfolio = () => {
           tools={"React, GraphQL, PostgreSQL, Postman, themoviedb.org API"}
           languages={"JavaScript, Go, SQL"}
           imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'PostgreSQL', color: 'secondary'},
+            { key: 2, label: 'Javascript', color: 'error'},
+            { key: 3, label: 'Go', color: 'error'},
+            { key: 4, label: 'API', color: 'secondary'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -117,21 +133,30 @@ const Portfolio = () => {
           tools={"React"}
           languages={"JavaScript"}
           imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'Javascript', color: 'error'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
         <PortfolioProject
-          id={"shop-app"}
-          toggle={toggleShop}
-          imgIcon={Shop}
-          imgProject={Shop}
-          title={"Shop App"}
-          open={shopIsOpen}
-          alt={"shop-app"}
-          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack and PayPal."}
-          tools={"React, Redux, Express, MongoDB, NodeJS, Postman, PayPal API"}
-          languages={"JavaScript"}
-          imageNumber={3}
+          id={"jsnote-app"}
+          toggle={toggleJsNote}
+          imgIcon={JsNote}
+          imgProject={JsNote}
+          title={"JsNote App"}
+          open={jsNoteIsOpen}
+          alt={"jsnote-app"}
+          text={"This is an interactive coding environment. You can write Javascript, see it executed, and write comprehensive documentation using markdown. All of your changes get saved to the file you opened Jsnote with."}
+          tools={"React, Redux"}
+          languages={"TypeScript"}
+          imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'Redux', color: 'secondary'},
+            { key: 2, label: 'Typescript', color: 'error'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -147,6 +172,10 @@ const Portfolio = () => {
           tools={"React"}
           languages={"JavaScript"}
           imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'Javascript', color: 'error'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -162,6 +191,11 @@ const Portfolio = () => {
           tools={"React Native, Redux, newsapi.org API, Postman"}
           languages={"TypeScript"}
           imageNumber={2}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'API', color: 'secondary'},
+            { key: 2, label: 'Typescript', color: 'error'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -177,6 +211,11 @@ const Portfolio = () => {
           tools={"Flutter, Android Studio"}
           languages={"Dart"}
           imageNumber={2}
+          chipData={[
+            { key: 0, label: 'Flutter', color: 'secondary'},
+            { key: 1, label: 'Dart', color: 'error'},
+            { key: 2, label: 'Android Studio', color: 'secondary'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -192,6 +231,9 @@ const Portfolio = () => {
           tools={"Spyder IDE"}
           languages={"Python"}
           imageNumber={3}
+          chipData={[
+            { key: 0, label: 'Python', color: 'error'},
+          ]}
         />
 
         {/* ---------------- project ---------------------------------- */}
@@ -207,6 +249,10 @@ const Portfolio = () => {
           tools={"React"}
           languages={"JavaScript"}
           imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 2, label: 'Javascript', color: 'error'},
+          ]}
         />
 
       </PortfolioWrapper>

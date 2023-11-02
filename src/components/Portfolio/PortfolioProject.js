@@ -1,5 +1,9 @@
 import React from "react";
 import CloseIcon from '../../images/close.png';
+import { styled } from '@mui/material/styles';
+import Chip from '@mui/material/Chip';
+import Paper from '@mui/material/Paper';
+
 import {
     PortfolioCard,
     PortfolioIcon,
@@ -15,7 +19,7 @@ import {
     Close
     } from './PortfolioElements';
 
-const PortfolioProject = ({ id, toggle, imgIcon, imgProject, title, open, alt, text, tools, languages, imageNumber}) => {
+const PortfolioProject = ({ id, toggle, imgIcon, imgProject, title, open, alt, text, tools, languages, imageNumber, chipData}) => {
     const replaceWithBr = (str) => {
         return str.replace(/\n/g, "<br />")
     }
@@ -33,11 +37,38 @@ const PortfolioProject = ({ id, toggle, imgIcon, imgProject, title, open, alt, t
         img = <Img src={imgProject} alt={alt} />;
     }
     
+    const ListItem = styled('li')(({ theme }) => ({
+        margin: theme.spacing(0.5),
+    }));
+    
     return (
         <>
             <PortfolioCard id={id} onClick={toggle}>
-            <PortfolioIcon src={imgIcon} />
-            <PortfolioH2>{title}</PortfolioH2>
+                <PortfolioIcon src={imgIcon} />
+                <PortfolioH2>{title}</PortfolioH2>
+                <Paper
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        listStyle: 'none',
+                        p: 0.5,
+                        m: 0,
+                    }}
+                    component="ul"
+                    >
+                        {chipData.map((data) => {
+                            return (
+                                <ListItem key={data.key}>
+                                    <Chip
+                                        label={data.label}
+                                        size={"small"}
+                                        color={data.color ? data.color : "default"}
+                                    />
+                                </ListItem>
+                            );
+                        })}
+                </Paper>
             </PortfolioCard>
 
             <StyleModal
