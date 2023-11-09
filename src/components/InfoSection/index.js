@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   InfoContainer,
   InfoWrapper,
@@ -8,12 +8,13 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  Subtitle2,
   BtnWrap,
   Column2,
   ImgWrap,
   Img,
   ButtonTwo,
-  ButtonThree
+  ButtonThree,
 } from './InfoElements';
 import Pdf from './benjamin_confiac.pdf';
 
@@ -38,7 +39,7 @@ const InfoSection = ({
   const replaceWithBr = (str) => {
     return str.replace(/\n/g, "<br />")
   }
-  
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -50,13 +51,13 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText} dangerouslySetInnerHTML={{__html: replaceWithBr(description)}}/>
                 <Subtitle darkText={darkText} dangerouslySetInnerHTML={{__html: replaceWithBr(descriptionKr)}}/>
-                <Subtitle><u>What I use (but not limited to):</u><br/><br/>
-                  <ul>
-                    <li>React, React Native, Flutter, Redux, PostgreSQL, MongoDB, NodeJS, ...</li>
-                    <li>JavaScript, TypeScript, Go, Dart, SQL, Java, Python, C#, ...</li>
-                    <li>Visual Studio Code, Trello, Slack, Figma, ...</li>
+                <Subtitle2 darkText={darkText}><u><b>Certifications :</b></u></Subtitle2>
+                <Subtitle2>
+                  <ul style={{marginLeft:'20px'}}>
+                    <li style={{marginBottom:'30px'}}>AWS Certified Cloud Practitioner</li>
+                    {/*<li style={{marginBottom:'25px'}}>TOEIC 875 pts</li>*/}
                   </ul>
-                </Subtitle>
+                </Subtitle2>
                 <BtnWrap>
                   <ButtonTwo
                     to={buttonLocation}
@@ -68,10 +69,10 @@ const InfoSection = ({
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                   >
-                    {buttonLabel}
+                    <b>{buttonLabel}</b>
                   </ButtonTwo>
                   <ButtonThree to={Pdf} target="_blank" dark={dark ? 1 : 0}>
-                    View Resume
+                    <b>View Resume</b>
                   </ButtonThree>
                 </BtnWrap>
               </TextWrapper>

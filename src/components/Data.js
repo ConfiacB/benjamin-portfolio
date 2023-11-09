@@ -17,6 +17,14 @@ export const homeObjOne = {
   darkText: false,
 }
 
+export const homeObjTwo = {
+  id: 'skills',
+  lightBg: false,
+  lightText: true,
+  headline: 'What I use (but not limited to) :',
+  primary: false,
+}
+
 export const social = {
   linkedin: 'https://www.linkedin.com/in/benjamin-confiac/',
   email: 'benjamin.confiac@gmail.com',
