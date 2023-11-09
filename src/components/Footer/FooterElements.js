@@ -47,10 +47,13 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 40px;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     color: #33BBBF;
-    transition: 0.3s ease-out;
+    transform: scale(1.3);
+    transition: 0.2s ease-out;
+    cursor: pointer;
   }
 `;
 
@@ -78,10 +81,13 @@ export const TopButton = styled.a`
   outline: none;
   background-color: #060F13;
   border-radius: 50px;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     color: #33BBBF;
-    transition: 0.3s ease-out;
+    transform: scale(1.3);
+    transition: 0.2s ease-out;
+    cursor: pointer;
   }
   
   @media screen and (max-width: 750px) {

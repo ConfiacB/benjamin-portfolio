@@ -106,7 +106,14 @@ export const SocialButton = styled.a`
   color: #fff;
   padding: 15px;
   font-size: 40px;
+  transition: all 0.2s ease-in-out;
   
+  &:hover {
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }

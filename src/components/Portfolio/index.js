@@ -13,6 +13,7 @@ import Connect4 from '../../images/project/connect_four_game.png';
 import Korean_Icon from '../../images/Korean-Icon.png';
 import Korean from '../../images/project/korean-training.png';
 import PortfolioProject from './PortfolioProject';
+import {Fade} from 'react-awesome-reveal';
 
 import {
 PortfolioContainer,
@@ -72,6 +73,7 @@ const Portfolio = () => {
     <PortfolioContainer id="portfolio">
       <PortfolioH1>My Projects</PortfolioH1>
       <PortfolioP2>Please check back here for updated projects.</PortfolioP2>
+      <Fade duration={3000} triggerOnce={true}>
       <PortfolioWrapper>
 
         {/* ---------------- project ---------------------------------- */}
@@ -256,6 +258,7 @@ const Portfolio = () => {
         />
 
       </PortfolioWrapper>
+      </Fade>
     </PortfolioContainer>
   )
 }

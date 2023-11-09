@@ -17,6 +17,7 @@ import {
   ButtonThree,
 } from './InfoElements';
 import Pdf from './benjamin_confiac.pdf';
+import {Slide, Fade} from 'react-awesome-reveal';
 
 const InfoSection = ({
   lightBg, 
@@ -46,18 +47,21 @@ const InfoSection = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
+            <Slide triggerOnce={true} direction='left'>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
+                <Fade triggerOnce={true} cascade>
                 <Subtitle darkText={darkText} dangerouslySetInnerHTML={{__html: replaceWithBr(description)}}/>
                 <Subtitle darkText={darkText} dangerouslySetInnerHTML={{__html: replaceWithBr(descriptionKr)}}/>
-                <Subtitle2 darkText={darkText}><u><b>Certifications :</b></u></Subtitle2>
+                <Subtitle2 darkText={darkText}><u><b>Certification :</b></u></Subtitle2>
                 <Subtitle2>
                   <ul style={{marginLeft:'20px'}}>
                     <li style={{marginBottom:'30px'}}>AWS Certified Cloud Practitioner</li>
-                    {/*<li style={{marginBottom:'25px'}}>TOEIC 875 pts</li>*/}
+                    {/*<li style={{marginBottom:'25px'}}>TOEIC</li>*/}
                   </ul>
                 </Subtitle2>
+                </Fade>
                 <BtnWrap>
                   <ButtonTwo
                     to={buttonLocation}
@@ -76,11 +80,14 @@ const InfoSection = ({
                   </ButtonThree>
                 </BtnWrap>
               </TextWrapper>
+              </Slide>
             </Column1>
             <Column2>
+            <Slide triggerOnce={true} direction='right'>
               <ImgWrap>
                 <Img src={img} alt={alt} />
               </ImgWrap>
+            </Slide>
             </Column2>
           </InfoRow>
         </InfoWrapper>

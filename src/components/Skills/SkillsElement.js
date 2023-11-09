@@ -8,8 +8,8 @@ export const SkillContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #060F13;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 
   @media screen and (max-width: 768px) {
     height: auto;
@@ -39,4 +39,11 @@ export const TechIcon = styled.div`
   font-size: 60px;
   color: white;
   margin-bottom: 60px;
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
