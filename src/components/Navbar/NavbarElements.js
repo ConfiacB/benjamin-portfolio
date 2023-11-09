@@ -42,7 +42,8 @@ export const NavLogo = styled(LinkR)`
 
   &:hover {
     color: #33BBBF;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
+    transform: scale(1.2);
   }
 `;
 
@@ -93,7 +94,8 @@ export const NavLinks = styled(LinkS)`
 
   &:hover {
     color: #33BBBF;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
+    transform: scale(1.2);
   }
 `;
 

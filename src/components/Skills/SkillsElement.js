@@ -43,7 +43,7 @@ export const TechIcon = styled.div`
   
   &:hover {
     transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;

@@ -61,7 +61,6 @@ const InfoSection = ({
                     {/*<li style={{marginBottom:'25px'}}>TOEIC</li>*/}
                   </ul>
                 </Subtitle2>
-                </Fade>
                 <BtnWrap>
                   <ButtonTwo
                     to={buttonLocation}
@@ -79,6 +78,7 @@ const InfoSection = ({
                     <b>View Resume</b>
                   </ButtonThree>
                 </BtnWrap>
+                </Fade>
               </TextWrapper>
               </Slide>
             </Column1>

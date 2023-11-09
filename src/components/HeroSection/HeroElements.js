@@ -123,6 +123,6 @@ export const ButtonTwo = styled(Link)`
   &:hover {
     background-position: 100%;
     color: #33BBBF;
-    transition: 400ms ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 `;

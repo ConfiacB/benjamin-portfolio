@@ -56,7 +56,7 @@ const Navbar = ({ toggle, social }) => {
                 spy={true} 
                 exact='true' 
                 offset={-80}
-              >About</NavLinks>
+              ><b>About</b></NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="skills"
@@ -65,7 +65,7 @@ const Navbar = ({ toggle, social }) => {
                 spy={true} 
                 exact='true' 
                 offset={-80}
-              >Skills</NavLinks>
+              ><b>Skills</b></NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="portfolio"
@@ -74,7 +74,7 @@ const Navbar = ({ toggle, social }) => {
                 spy={true} 
                 exact='true' 
                 offset={-80}
-              >Projects</NavLinks>
+              ><b>Projects</b></NavLinks>
             </NavItem>
           </NavMenu>
           <SocialWrapper>

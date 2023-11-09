@@ -64,7 +64,7 @@ export const PortfolioCard = styled.div`
   &:hover {
     background: #f8f9f9;
     transform: scale(1.04);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
     opacity: 1;
   }

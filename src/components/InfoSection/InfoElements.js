@@ -125,7 +125,7 @@ export const ButtonTwo = styled(Link)`
   &:hover {
     background-position: 100%;
     color: ${({dark}) => (dark ? '#33BBBF' : '#fff')};
-    transition: 400ms ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 `;
 
@@ -147,6 +147,6 @@ export const ButtonThree = styled(LinkPdf)`
   &:hover {
     background-position: 100%;
     color: ${({dark}) => (dark ? '#33BBBF' : '#fff')};
-    transition: 400ms ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 `;
