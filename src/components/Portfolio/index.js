@@ -6,13 +6,14 @@ import Shop from '../../images/project/react-shop.png';
 import Memory from '../../images/project/react-memory-game.png';
 import News from '../../images/project/news-app-demo.gif';
 import News_Icon from '../../images/news-icon.jpg';
-import BMI from '../../images/project/bmi-calc-demo.gif';
-import BMI_Icon from '../../images/BMI-icon.png';
 import Connect4_Icon from '../../images/connect_four.png'
 import Connect4 from '../../images/project/connect_four_game.png';
 import Korean_Icon from '../../images/Korean-Icon.png';
 import Korean from '../../images/project/korean-training.png';
 import PortfolioProject from './PortfolioProject';
+//import BMI from '../../images/project/bmi-calc-demo.gif';
+//import BMI_Icon from '../../images/BMI-icon.png';*/
+import AWS_Go from '../../images/aws_go.jpg';
 import {Fade} from 'react-awesome-reveal';
 
 import {
@@ -29,9 +30,10 @@ const Portfolio = () => {
   const [shopIsOpen, setShopIsOpen] = useState(false);
   const [memoryIsOpen, setMemoryIsOpen] = useState(false);
   const [newsIsOpen, setNewsIsOpen] = useState(false);
-  const [bmiIsOpen, setBmiIsOpen] = useState(false);
   const [connect4IsOpen, setConnect4IsOpen] = useState(false);
   const [koreanIsOpen, setKoreanIsOpen] = useState(false);
+  //const [bmiIsOpen, setBmiIsOpen] = useState(false);
+  const [awsGoIsOpen, setAwsGoIsOpen] = useState(false);
 
   const toggleJsNote = () => {
     setJsNoteIsOpen(!jsNoteIsOpen);
@@ -57,10 +59,6 @@ const Portfolio = () => {
     setNewsIsOpen(!newsIsOpen);
   };
 
-  const toggleBMI = () => {
-    setBmiIsOpen(!bmiIsOpen);
-  };
-
   const toggleConnect4 = () => {
     setConnect4IsOpen(!connect4IsOpen);
   };
@@ -68,6 +66,14 @@ const Portfolio = () => {
   const toggleKorean = () => {
     setKoreanIsOpen(!koreanIsOpen);
   };
+  
+  //const toggleBMI = () => {
+  //  setBmiIsOpen(!bmiIsOpen);
+  //};
+  
+  const toggleAwsGo = () => {
+    setAwsGoIsOpen(!awsGoIsOpen);
+  }
 
   return (
     <PortfolioContainer id="portfolio">
@@ -143,6 +149,25 @@ const Portfolio = () => {
 
         {/* ---------------- project ---------------------------------- */}
         <PortfolioProject
+          id={"aws-go"}
+          toggle={toggleAwsGo}
+          imgIcon={AWS_Go}
+          imgProject={AWS_Go}
+          title={"Serverless REST API"}
+          open={awsGoIsOpen}
+          alt={"aws-go"}
+          text={"This project is a serverless CRUD REST API using AWS (Lambda, DynamoDB, API Gateway) and Golang."}
+          tools={"AWS Lambda, AWS DynamoDB, AWS API Gateway"}
+          languages={"Go"}
+          imageNumber={3}
+          chipData={[
+            { key: 0, label: 'AWS', color: 'secondary'},
+            { key: 2, label: 'Go', color: 'error'},
+          ]}
+        />
+
+        {/* ---------------- project ---------------------------------- */}
+        <PortfolioProject
           id={"jsnote-app"}
           toggle={toggleJsNote}
           imgIcon={JsNote}
@@ -200,7 +225,7 @@ const Portfolio = () => {
           ]}
         />
 
-        {/* ---------------- project ---------------------------------- */}
+        {/* ---------------- project ---------------------------------- 
         <PortfolioProject
           id={"BMI-app"}
           toggle={toggleBMI}
@@ -218,7 +243,7 @@ const Portfolio = () => {
             { key: 1, label: 'Dart', color: 'error'},
             { key: 2, label: 'Android Studio', color: 'secondary'},
           ]}
-        />
+        />*/}
 
         {/* ---------------- project ---------------------------------- */}
         <PortfolioProject
