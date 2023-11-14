@@ -189,26 +189,30 @@ export const StyleModalLinkContainer = styled.div`
 export const Img = styled.img`
   width: 80%;
   border-radius: 10px;
+  margin-top: -15px;
 `;
 
 export const Img2 = styled.img`
   width: 20%;
   border-radius: 10px;
+  margin-top: -15px;
 `;
 
 export const Img3 = styled.img`
   width: 50%;
   border-radius: 10px;
+  margin-top: -15px;
 `;
 
 export const Img4 = styled.img`
   width: auto; 
   max-height: 100%;
   border-radius: 10px;
+  margin-top: -15px;
 `;
 
 export const Close = styled.img`
-  width: 20px;
+  width: 30px;
   margin-left: 90%;
   cursor: pointer;
 
