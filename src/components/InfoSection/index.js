@@ -13,7 +13,7 @@ import {
   Column2,
   ImgWrap,
   Img,
-  ButtonTwo,
+  //ButtonTwo,
   ButtonThree,
 } from './InfoElements';
 import Pdf from './benjamin_confiac.pdf';
@@ -61,7 +61,7 @@ const InfoSection = ({
                     {/*<li style={{marginBottom:'25px'}}>TOEIC</li>*/}
                   </ul>
                 </Subtitle2>
-                <BtnWrap>
+                <BtnWrap>{/*
                   <ButtonTwo
                     to={buttonLocation}
                     smooth={true}
@@ -73,7 +73,7 @@ const InfoSection = ({
                     dark={dark ? 1 : 0}
                   >
                     <b>{buttonLabel}</b>
-                  </ButtonTwo>
+                  </ButtonTwo>*/}
                   <ButtonThree to={Pdf} target="_blank" dark={dark ? 1 : 0}>
                     <b>View Resume</b>
                   </ButtonThree>

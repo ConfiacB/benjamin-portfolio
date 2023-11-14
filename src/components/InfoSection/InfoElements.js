@@ -94,7 +94,7 @@ export const Subtitle2 = styled.p`
 
 export const BtnWrap = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const ImgWrap = styled.div`
@@ -142,7 +142,7 @@ export const ButtonThree = styled(LinkPdf)`
   padding: 14px 30px;
   cursor:pointer;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 0px;
 
   &:hover {
     background-position: 100%;

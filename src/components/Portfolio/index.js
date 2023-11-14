@@ -91,7 +91,7 @@ const Portfolio = () => {
           title={"Shop App"}
           open={shopIsOpen}
           alt={"shop-app"}
-          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack and PayPal."}
+          text={"A shopping cart / eCommerce application using the MERN (MongoDB, Express, React, NodeJS) stack, Redux Toolkit and PayPal. This project has :\n\n- Shopping cart\n- Products reviews, ratings, carousel, pagination, search\n- user profile\n- admin products, users, orders management\n- checkout process\n- PayPal / credit card\n- Database seeder\n\n"}
           tools={"React, Redux, Express, MongoDB, NodeJS, Postman, PayPal API"}
           languages={"JavaScript"}
           imageNumber={3}
@@ -115,7 +115,7 @@ const Portfolio = () => {
           title={"Movies Database App"}
           open={moviesIsOpen}
           alt={"movies-app"}
-          text={"This is a web application where you can manage movies using RESTful API."}
+          text={"This is a web application where you can manage movies using RESTful CRUD API.\nThe Frontend and Backend are written with React, Javascript and Go.\n\n- Create, Read, Update, Delete a movie\n- Login as an admin\n- Search functionality\n\n"}
           tools={"React, GraphQL, PostgreSQL, Postman, themoviedb.org API"}
           languages={"JavaScript, Go, SQL"}
           imageNumber={1}
@@ -125,25 +125,6 @@ const Portfolio = () => {
             { key: 2, label: 'Javascript', color: 'error'},
             { key: 3, label: 'Go', color: 'error'},
             { key: 4, label: 'API', color: 'secondary'},
-          ]}
-        />
-
-        {/* ---------------- project ---------------------------------- */}
-        <PortfolioProject
-          id={"portfolio-app"}
-          toggle={togglePortfolio}
-          imgIcon={Portfolio_App}
-          imgProject={Portfolio_App}
-          title={"Portfolio"}
-          open={portfolioIsOpen}
-          alt={"portfolio-app"}
-          text={"The purpose of this application is to display my IT projects, I use it as my personal portfolio website."}
-          tools={"React"}
-          languages={"JavaScript"}
-          imageNumber={1}
-          chipData={[
-            { key: 0, label: 'React', color: 'secondary'},
-            { key: 1, label: 'Javascript', color: 'error'},
           ]}
         />
 
@@ -168,6 +149,25 @@ const Portfolio = () => {
 
         {/* ---------------- project ---------------------------------- */}
         <PortfolioProject
+          id={"portfolio-app"}
+          toggle={togglePortfolio}
+          imgIcon={Portfolio_App}
+          imgProject={Portfolio_App}
+          title={"Portfolio"}
+          open={portfolioIsOpen}
+          alt={"portfolio-app"}
+          text={"The purpose of this application is to display my IT projects, I use it as my personal portfolio website."}
+          tools={"React"}
+          languages={"JavaScript"}
+          imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 1, label: 'Javascript', color: 'error'},
+          ]}
+        />
+
+        {/* ---------------- project ---------------------------------- */}
+        <PortfolioProject
           id={"jsnote-app"}
           toggle={toggleJsNote}
           imgIcon={JsNote}
@@ -183,6 +183,25 @@ const Portfolio = () => {
             { key: 0, label: 'React', color: 'secondary'},
             { key: 1, label: 'Redux', color: 'secondary'},
             { key: 2, label: 'Typescript', color: 'error'},
+          ]}
+        />
+
+        {/* ---------------- project ---------------------------------- */}
+        <PortfolioProject
+          id={"korean-app"}
+          toggle={toggleKorean}
+          imgIcon={Korean_Icon}
+          imgProject={Korean}
+          title={"Korean Training"}
+          open={koreanIsOpen}
+          alt={"korean-app"}
+          text={"Auto-generate sentence flashcards to practice Korean. Each card has 2 buttons, 'Show Answer' and 'Next'.\n It gives sentences or words (depending on the options chosen), the goal is to either translate or to conjugate these words."}
+          tools={"React"}
+          languages={"JavaScript"}
+          imageNumber={1}
+          chipData={[
+            { key: 0, label: 'React', color: 'secondary'},
+            { key: 2, label: 'Javascript', color: 'error'},
           ]}
         />
 
@@ -260,25 +279,6 @@ const Portfolio = () => {
           imageNumber={3}
           chipData={[
             { key: 0, label: 'Python', color: 'error'},
-          ]}
-        />
-
-        {/* ---------------- project ---------------------------------- */}
-        <PortfolioProject
-          id={"korean-app"}
-          toggle={toggleKorean}
-          imgIcon={Korean_Icon}
-          imgProject={Korean}
-          title={"Korean Training"}
-          open={koreanIsOpen}
-          alt={"korean-app"}
-          text={"Auto-generate sentence flashcards to practice Korean. Each card has 2 buttons, 'Show Answer' and 'Next'.\n It gives sentences or words (depending on the options chosen), the goal is to either translate or to conjugate these words."}
-          tools={"React"}
-          languages={"JavaScript"}
-          imageNumber={1}
-          chipData={[
-            { key: 0, label: 'React', color: 'secondary'},
-            { key: 2, label: 'Javascript', color: 'error'},
           ]}
         />
 
