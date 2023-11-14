@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { animateScroll as scroll } from 'react-scroll';
 import { FaLinkedin } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
@@ -15,6 +15,26 @@ import {
 } from './FooterElements';
 
 const Footer = ({ social }) => {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [height, setHeight] = useState(0);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 600;
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
 
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -47,9 +67,11 @@ const Footer = ({ social }) => {
             </WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
+        {isVisible && 
         <TopButton onClick={toggleHome}>
           <ArrowUp />
         </TopButton>
+        }
       </FooterWrap>
     </FooterContainer>
   )
