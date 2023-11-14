@@ -95,7 +95,7 @@ export const PortfolioP2 = styled.p`
 `;
 
 export const StyleModal = Modal.styled`
-  background: #fff;
+  background: #e5e7e9;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
