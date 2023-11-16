@@ -150,3 +150,14 @@ export const ButtonThree = styled(LinkPdf)`
     transition: 0.3s ease-in-out;
   }
 `;
+
+export const StyledURL = styled.a`
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.2s ease-out;
+    font-size: 110%;
+  }
+`;

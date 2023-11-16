@@ -15,6 +15,7 @@ import {
   Img,
   //ButtonTwo,
   ButtonThree,
+  StyledURL,
 } from './InfoElements';
 import Pdf from './benjamin_confiac.pdf';
 import {Slide, Fade} from 'react-awesome-reveal';
@@ -57,7 +58,7 @@ const InfoSection = ({
                 <Subtitle2 darkText={darkText}><u><b>Certification :</b></u></Subtitle2>
                 <Subtitle2>
                   <ul style={{marginLeft:'20px'}}>
-                    <li style={{marginBottom:'30px'}}>AWS Certified Cloud Practitioner</li>
+                    <li style={{marginBottom:'30px'}}><StyledURL href='https://www.credly.com/badges/6aadc28e-6f85-4314-893e-e36a9a5ade08/public_url' target='_blank'>AWS Certified Cloud Practitioner</StyledURL></li>
                     {/*<li style={{marginBottom:'25px'}}>TOEIC</li>*/}
                   </ul>
                 </Subtitle2>
