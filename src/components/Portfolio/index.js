@@ -3,11 +3,11 @@ import JsNote from '../../images/project/jsnote-webapp.png';
 import Movies from '../../images/project/movies-webapp.png';
 import Portfolio_App from '../../images/project/portfolio.png';
 import Shop from '../../images/project/react-shop.png';
-import Memory from '../../images/project/react-memory-game.png';
+//import Memory from '../../images/project/react-memory-game.png';
 import News from '../../images/project/news-app-demo.gif';
 import News_Icon from '../../images/news-icon.jpg';
-import Connect4_Icon from '../../images/connect_four.png'
-import Connect4 from '../../images/project/connect_four_game.png';
+//import Connect4_Icon from '../../images/connect_four.png'
+//import Connect4 from '../../images/project/connect_four_game.png';
 import Korean_Icon from '../../images/Korean-Icon.png';
 import Korean from '../../images/project/korean-training.png';
 import PortfolioProject from './PortfolioProject';

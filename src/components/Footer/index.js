@@ -17,12 +17,10 @@ import {
 const Footer = ({ social }) => {
 
   const [isVisible, setIsVisible] = useState(false);
-  const [height, setHeight] = useState(0);
 
   const listenToScroll = () => {
     let heightToHideFrom = 600;
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    setHeight(winScroll);
 
     if (winScroll > heightToHideFrom) {
       setIsVisible(true);
